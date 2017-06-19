@@ -2,8 +2,8 @@
 - run 
 
 ``` bash
-docker run --name binwalk -d --privileged \
-    -h binwalk \
+docker run --name router -d --privileged \
+    -h router \
     -v /etc/localtime:/etc/localtime:ro \
-    zet235/binwalk
+    zet235/router
 ```
