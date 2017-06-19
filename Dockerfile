@@ -2,7 +2,7 @@
 FROM phusion/baseimage:0.9.17
 
 RUN sed -i 's/archive.ubuntu.com/free.nchc.org.tw/g' /etc/apt/sources.list && \
-    echo 'deb http://www.emdebian.org/debian/ squeeze main' >  /etc/apt/sources.list && \
+    echo 'deb http://www.emdebian.org/debian/ squeeze main' >>  /etc/apt/sources.list && \
     apt-get update && \
     apt-get dist-upgrade -y && \
     apt-get install -y zsh git tmux vim python-dev && \
