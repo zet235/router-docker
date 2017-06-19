@@ -1,6 +1,0 @@
-[submodule "docker-mobsf"]
-	path = docker-mobsf
-	url = https://github.com/nahidupa/docker-mobsf.git
-[submodule "webui-aria2"]
-	path = webui-aria2
-	url = https://github.com/ziahamza/webui-aria2.git
