@@ -11,7 +11,8 @@ RUN sed -i 's/archive.ubuntu.com/free.nchc.org.tw/g' /etc/apt/sources.list && \
     apt-get install -y emdebian-archive-keyring && \
     apt-get install -y --force-yes binutils-mips-linux-gnu binutils-mipsel-linux-gnu binutils-arm-linux-gnueabi && \
     apt-get install -y qemu-user-static && \
-    pip install nose coverage thefuck && \
+    pip install -U pip==9.0.1 && \
+    pip install nose coverage && \
     git clone https://github.com/devttys0/binwalk.git ~/binwalk && \
     git clone --recursive https://github.com/zet235/dotfiles.git ~/.dotfiles && \
     cd ~/binwalk && \
