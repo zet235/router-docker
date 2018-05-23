@@ -19,5 +19,6 @@ RUN sed -i 's/archive.ubuntu.com/free.nchc.org.tw/g' /etc/apt/sources.list && \
     sudo python setup.py install && \
     apt-get install zlib1g-dev liblzma-dev liblzo2-dev && \
     cd ~ && \
+    git clone https://github.com/rampageX/firmware-mod-kit && \
     git clone https://github.com/devttys0/sasquatch && \
     cd ~/sasquatch && ./build.sh
